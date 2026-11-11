@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwi Andika - Portofolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: '#4f46e5', // Indigo 600
+                        'brand-light': '#e0e7ff', // Indigo 100
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        [data-carousel-track] {
+            scrollbar-width: none;
+        }
+
+        [data-carousel-track]::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="py-6 px-4 md:px-8 max-w-5xl mx-auto flex justify-between items-center">
+        <a href="#" class="text-xl font-bold text-slate-900 tracking-tight">Andika<span class="text-brand">.</span></a>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+            <a href="#tentang" class="hover:text-brand transition-colors">Tentang</a>
+            <a href="#keahlian" class="hover:text-brand transition-colors">Keahlian</a>
+            <a href="#portofolio" class="hover:text-brand transition-colors">Portofolio</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Hero Section -->
+        <section class="py-20 md:py-28 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
+                Dwi Andika Suyanto
+            </h1>
+            <p class="text-lg md:text-xl text-brand font-medium mb-8">
+                Video Editor & Data Entry Specialist
+            </p>
+            <p class="text-slate-600 max-w-2xl mx-auto leading-relaxed mb-10">
+                Membantu Anda membuat konten video pendek yang menarik serta menyelesaikan tugas administratif berupa penginputan data dasar dengan teliti dan rapi.
+            </p>
+            <a href="#kontak" class="inline-block bg-brand hover:bg-indigo-700 text-white font-medium px-8 py-3 rounded-full transition-colors shadow-sm">
+                Hubungi Saya
+            </a>
+        </section>
+
+        <!-- Divider -->
+        <hr class="border-slate-200 my-10">
+
+        <!-- About Section -->
+        <section id="tentang" class="py-12">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Tentang Saya</h2>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Halo! Saya Andika. Saya adalah seorang pekerja lepas yang fokus pada dua bidang utama: <strong>Pengeditan Video</strong> dan <strong>Data Entry</strong>.
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    Saya terbiasa memotong, merapikan, dan merangkai video pendek untuk kebutuhan media sosial (TikTok, Instagram Reels, YouTube Shorts) menggunakan aplikasi CapCut. Selain itu, saya juga cekatan dalam membantu rekapitulasi data ringan dan pemindahan data menggunakan fitur-fitur dasar pada Microsoft Excel dan Google Sheets.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="keahlian" class="py-12">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Keahlian & Tools</h2>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="bg-white border border-slate-200 text-slate-700 px-5 py-2 rounded-full font-medium shadow-sm hover:border-brand transition-colors">
+                    🎬 CapCut (Video Editing)
+                </span>
+                <span class="bg-white border border-slate-200 text-slate-700 px-5 py-2 rounded-full font-medium shadow-sm hover:border-brand transition-colors">
+                    📊 Google Sheets (Dasar)
+                </span>
+                <span class="bg-white border border-slate-200 text-slate-700 px-5 py-2 rounded-full font-medium shadow-sm hover:border-brand transition-colors">
+                    📗 Microsoft Excel (Dasar)
+                </span>
+                <span class="bg-white border border-slate-200 text-slate-700 px-5 py-2 rounded-full font-medium shadow-sm hover:border-brand transition-colors">
+                    🎨 Canva (Desain Ringan)
+                </span>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portofolio" class="py-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-3 text-center">Contoh Pekerjaan</h2>
+            <p class="text-slate-500 text-center mb-8">Beberapa contoh hasil pekerjaan saya.</p>
+            
+            <div class="mx-auto max-w-3xl space-y-10">
+                <section aria-labelledby="foto-portfolio-heading">
+                    <h3 id="foto-portfolio-heading" class="mb-4 text-lg font-bold text-slate-900">Galeri Foto</h3>
+                    <div data-carousel>
+                        <div data-carousel-track class="flex snap-x snap-mandatory overflow-x-auto scroll-smooth" tabindex="0" aria-label="Galeri foto pekerjaan">
+                
+                <!-- KARTU 1: DATA ENTRY (GAMBAR) -->
+                <article class="w-full shrink-0 snap-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                    <button type="button" class="group block w-full overflow-hidden bg-slate-100" data-open-media data-media-type="image" data-media-src="porto1.png" data-media-alt="Rekap Data Karyawan" aria-label="Perbesar foto Rekap Data Karyawan">
+                        <img src="porto1.png" alt="Rekap Data Karyawan" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    </button>
+                    
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="mb-2 font-bold text-slate-900">Rekap Data Karyawan</h3>
+                        <p class="mb-5 text-sm leading-relaxed text-slate-500">Pengolahan data dasar menggunakan Google Sheets.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">Google Sheets</span>
+                        </div>
+                    </div>
+                </article>
+
+                        </div>
+                        <div class="mt-4 flex items-center justify-center gap-5">
+                            <button type="button" data-carousel-prev class="rounded-full border border-slate-200 bg-white p-2 text-slate-700 shadow-sm transition-colors hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40" aria-label="Foto sebelumnya" disabled>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12.79 15.71a1 1 0 01-1.42 0l-5-5a1 1 0 010-1.42l5-5a1 1 0 111.42 1.42L8.5 10l4.29 4.29a1 1 0 010 1.42z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <span data-carousel-position class="min-w-12 text-center text-sm font-medium text-slate-500" aria-live="polite">1 / 1</span>
+                            <button type="button" data-carousel-next class="rounded-full border border-slate-200 bg-white p-2 text-slate-700 shadow-sm transition-colors hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40" aria-label="Foto berikutnya" disabled>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M7.21 4.29a1 1 0 011.42 0l5 5a1 1 0 01-1.42 1.42L11.5 10 7.21 5.71a1 1 0 010-1.42z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section aria-labelledby="video-portfolio-heading">
+                    <h3 id="video-portfolio-heading" class="mb-4 text-lg font-bold text-slate-900">Galeri Video</h3>
+                    <div data-carousel>
+                        <div data-carousel-track class="flex snap-x snap-mandatory overflow-x-auto scroll-smooth" tabindex="0" aria-label="Galeri video pekerjaan">
+                <!-- KARTU 2: VIDEO EDITING (FILE MP4 LOKAL) -->
+                <article class="w-full shrink-0 snap-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                    <video controls autoplay loop muted playsinline class="aspect-video w-full bg-black object-cover">
+                        <source src="capcut1.mp4" type="video/mp4">
+                        Maaf, browser Anda tidak mendukung pemutar video ini.
+                    </video>
+                    
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="mb-2 font-bold text-slate-900">Edit Video CapCut</h3>
+                        <p class="mb-5 text-sm leading-relaxed text-slate-500">Hasil editing video menggunakan aplikasi CapCut.</p>
+                        <div class="mt-auto flex items-center justify-between gap-3">
+                            <span class="inline-block rounded-full bg-brand-light px-3 py-1 text-xs font-medium text-brand">CapCut</span>
+                            <button type="button" class="rounded-full border border-brand/20 px-3 py-1.5 text-sm font-medium text-brand transition-colors hover:bg-brand-light" data-open-media data-media-type="video" data-media-src="capcut1.mp4" data-media-alt="Edit Video CapCut">
+                                Perbesar video
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="w-full shrink-0 snap-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                    <video controls autoplay loop muted playsinline class="aspect-video w-full bg-black object-cover">
+                        <source src="capcut2.mp4" type="video/mp4">
+                        Maaf, browser Anda tidak mendukung pemutar video ini.
+                    </video>
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="mb-2 font-bold text-slate-900">Edit Video CapCut 2</h3>
+                        <p class="mb-5 text-sm leading-relaxed text-slate-500">Contoh hasil editing video menggunakan aplikasi CapCut.</p>
+                        <div class="mt-auto flex items-center justify-between gap-3">
+                            <span class="inline-block rounded-full bg-brand-light px-3 py-1 text-xs font-medium text-brand">CapCut</span>
+                            <button type="button" class="rounded-full border border-brand/20 px-3 py-1.5 text-sm font-medium text-brand transition-colors hover:bg-brand-light" data-open-media data-media-type="video" data-media-src="capcut2.mp4" data-media-alt="Edit Video CapCut 2">
+                                Perbesar video
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                        </div>
+                        <div class="mt-4 flex items-center justify-center gap-5">
+                    <button type="button" data-carousel-prev class="rounded-full border border-slate-200 bg-white p-2 text-slate-700 shadow-sm transition-colors hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40" aria-label="Video sebelumnya" disabled>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.79 15.71a1 1 0 01-1.42 0l-5-5a1 1 0 010-1.42l5-5a1 1 0 111.42 1.42L8.5 10l4.29 4.29a1 1 0 010 1.42z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <span data-carousel-position class="min-w-12 text-center text-sm font-medium text-slate-500" aria-live="polite">1 / 1</span>
+                    <button type="button" data-carousel-next class="rounded-full border border-slate-200 bg-white p-2 text-slate-700 shadow-sm transition-colors hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40" aria-label="Video berikutnya" disabled>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M7.21 4.29a1 1 0 011.42 0l5 5a1 1 0 010 1.42l-5 5a1 1 0 11-1.42-1.42L11.5 10 7.21 5.71a1 1 0 010-1.42z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer id="kontak" class="bg-white border-t border-slate-200 py-16 mt-10">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Tertarik Bekerja Sama?</h2>
+            <p class="text-slate-600 mb-8">
+                Jika Anda membutuhkan bantuan untuk mengedit video CapCut atau mengurus input data sederhana, jangan ragu untuk mengirim pesan kepada saya.
+            </p>
+            <a href="mailto:suyantodwiandika@gmail.com" class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-3 rounded-full transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                Kirim Email Sekarang
+            </a>
+            <p class="text-sm text-slate-400 mt-12">
+                © 2026 Dwi Andika Suyanto. Dibuat dengan dedikasi.
+            </p>
+        </div>
+    </footer>
+
+    <dialog id="media-dialog" class="w-[min(95vw,1200px)] max-h-[95vh] p-0 border-0 bg-transparent backdrop:bg-black/80">
+        <div class="relative rounded-xl bg-black p-3">
+            <button type="button" id="close-media-dialog" class="absolute right-4 top-4 z-10 rounded-full bg-white/90 px-3 py-1 text-sm font-semibold text-slate-900 hover:bg-white" aria-label="Tutup media">
+                Tutup
+            </button>
+            <div id="media-dialog-content" class="flex max-h-[90vh] items-center justify-center"></div>
+        </div>
+    </dialog>
+
+    <script>
+        const mediaDialog = document.getElementById('media-dialog');
+        const mediaDialogContent = document.getElementById('media-dialog-content');
+        document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+            const track = carousel.querySelector('[data-carousel-track]');
+            const slides = Array.from(track.children);
+            const position = carousel.querySelector('[data-carousel-position]');
+            const prev = carousel.querySelector('[data-carousel-prev]');
+            const next = carousel.querySelector('[data-carousel-next]');
+
+            function updateControls() {
+                const trackCenter = track.getBoundingClientRect().left + track.clientWidth / 2;
+                const activeIndex = slides.reduce((closestIndex, slide, index) => {
+                    const slideCenter = slide.getBoundingClientRect().left + slide.offsetWidth / 2;
+                    const closestCenter = slides[closestIndex].getBoundingClientRect().left
+                        + slides[closestIndex].offsetWidth / 2;
+                    return Math.abs(slideCenter - trackCenter) < Math.abs(closestCenter - trackCenter)
+                        ? index
+                        : closestIndex;
+                }, 0);
+
+                position.textContent = `${activeIndex + 1} / ${slides.length}`;
+                prev.disabled = activeIndex === 0;
+                next.disabled = activeIndex === slides.length - 1;
+            }
+
+            function showSlide(index) {
+                const trackLeft = track.getBoundingClientRect().left;
+                const slideLeft = slides[index].getBoundingClientRect().left;
+                track.scrollTo({
+                    left: track.scrollLeft + slideLeft - trackLeft,
+                    behavior: 'smooth'
+                });
+            }
+
+            prev.addEventListener('click', () => {
+                const currentIndex = Number(position.textContent.split('/')[0]) - 1;
+                showSlide(Math.max(0, currentIndex - 1));
+            });
+            next.addEventListener('click', () => {
+                const currentIndex = Number(position.textContent.split('/')[0]) - 1;
+                showSlide(Math.min(slides.length - 1, currentIndex + 1));
+            });
+            track.addEventListener('scroll', updateControls, { passive: true });
+            window.addEventListener('resize', updateControls);
+            updateControls();
+        });
+
+        document.querySelectorAll('[data-open-media]').forEach((button) => {
+            button.addEventListener('click', () => {
+                mediaDialogContent.replaceChildren();
+
+                if (button.dataset.mediaType === 'image') {
+                    const image = document.createElement('img');
+                    image.src = button.dataset.mediaSrc;
+                    image.alt = button.dataset.mediaAlt;
+                    image.className = 'block max-h-[85vh] max-w-[90vw] object-contain';
+                    mediaDialogContent.append(image);
+                } else {
+                    const video = document.createElement('video');
+                    const source = document.createElement('source');
+                    source.src = button.dataset.mediaSrc;
+                    source.type = 'video/mp4';
+                    video.controls = true;
+                    video.autoplay = true;
+                    video.loop = true;
+                    video.muted = true;
+                    video.playsInline = true;
+                    video.className = 'block max-h-[85vh] max-w-[90vw]';
+                    video.setAttribute('aria-label', button.dataset.mediaAlt);
+                    video.append(source);
+                    mediaDialogContent.append(video);
+                }
+
+                mediaDialog.showModal();
+            });
+        });
+
+        document.getElementById('close-media-dialog').addEventListener('click', () => mediaDialog.close());
+        mediaDialog.addEventListener('click', (event) => {
+            if (event.target === mediaDialog) mediaDialog.close();
+        });
+        mediaDialog.addEventListener('close', () => mediaDialogContent.replaceChildren());
+    </script>
+</body>
+</html>
