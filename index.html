@@ -119,37 +119,31 @@
             <h2 class="text-2xl font-bold text-slate-900 mb-3 text-center">Contoh Pekerjaan</h2>
             <p class="text-slate-500 text-center mb-8">Beberapa contoh hasil pekerjaan saya.</p>
             
-            <div class="mx-auto max-w-3xl space-y-10">
+            <div class="mx-auto max-w-3xl space-y-8">
                 <section aria-labelledby="foto-portfolio-heading">
-                    <h3 id="foto-portfolio-heading" class="mb-4 text-lg font-bold text-slate-900">Galeri Foto</h3>
+                    <h3 id="foto-portfolio-heading" class="mb-3 text-lg font-bold text-slate-900">Galeri Foto</h3>
                     <div data-carousel>
-                        <div data-carousel-track class="flex snap-x snap-mandatory overflow-x-auto scroll-smooth" tabindex="0" aria-label="Galeri foto pekerjaan">
-                
-                <!-- KARTU 1: DATA ENTRY (GAMBAR) -->
-                <article class="w-full shrink-0 snap-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                    <button type="button" class="group block w-full overflow-hidden bg-slate-100" data-open-media data-media-type="image" data-media-src="porto1.png" data-media-alt="Rekap Data Karyawan" aria-label="Perbesar foto Rekap Data Karyawan">
-                        <img src="porto1.png" alt="Rekap Data Karyawan" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
-                    </button>
-                    
-                    <div class="flex flex-1 flex-col p-5">
-                        <h3 class="mb-2 font-bold text-slate-900">Rekap Data Karyawan</h3>
-                        <p class="mb-5 text-sm leading-relaxed text-slate-500">Pengolahan data dasar menggunakan Google Sheets.</p>
-                        <div class="mt-auto">
-                            <span class="inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">Google Sheets</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="w-full shrink-0 snap-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                    <button type="button" class="group block w-full overflow-hidden bg-slate-100" data-open-media data-media-type="image" data-media-src="porto2.png" data-media-alt="Rekap Penjualan dan Kategori Bonus" aria-label="Perbesar foto Rekap Penjualan dan Kategori Bonus">
-                        <img src="porto2.png" alt="Rekap Penjualan dan Kategori Bonus" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
-                    </button>
-                    <div class="p-5">
-                        <h3 class="mb-2 font-bold text-slate-900">Rekap Penjualan dan Bonus</h3>
-                        <p class="mb-4 text-sm leading-relaxed text-slate-500">Pengolahan data produk, jumlah penjualan, total penjualan, dan kategori bonus menggunakan Google Sheets.</p>
-                        <span class="inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">Google Sheets</span>
-                    </div>
-                </article>
-
+                        <div data-carousel-track class="flex items-stretch snap-x snap-mandatory overflow-x-auto scroll-smooth" tabindex="0" aria-label="Galeri foto pekerjaan">
+                            <article class="flex w-full shrink-0 snap-center flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md">
+                                <button type="button" class="group block w-full overflow-hidden bg-slate-100" data-open-media data-media-type="image" data-media-src="porto1.png" data-media-alt="Rekap Data Karyawan" aria-label="Perbesar foto Rekap Data Karyawan">
+                                    <img src="porto1.png" alt="Rekap Data Karyawan" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                </button>
+                                <div class="flex flex-1 flex-col p-5">
+                                    <h4 class="mb-2 text-lg font-bold text-slate-900">Rekap Data Karyawan</h4>
+                                    <p class="mb-5 flex-1 text-sm leading-relaxed text-slate-500">Pengolahan data dasar menggunakan Google Sheets.</p>
+                                    <span class="mt-auto inline-block w-fit rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">Google Sheets</span>
+                                </div>
+                            </article>
+                            <article class="flex w-full shrink-0 snap-center flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md">
+                                <button type="button" class="group block w-full overflow-hidden bg-slate-100" data-open-media data-media-type="image" data-media-src="porto2.png" data-media-alt="Rekap Penjualan dan Kategori Bonus" aria-label="Perbesar foto Rekap Penjualan dan Kategori Bonus">
+                                    <img src="porto2.png" alt="Rekap Penjualan dan Kategori Bonus" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                </button>
+                                <div class="flex flex-1 flex-col p-5">
+                                    <h4 class="mb-2 text-lg font-bold text-slate-900">Rekap Penjualan dan Bonus</h4>
+                                    <p class="mb-5 flex-1 text-sm leading-relaxed text-slate-500">Pengolahan data produk, jumlah penjualan, total penjualan, dan kategori bonus menggunakan Google Sheets.</p>
+                                    <span class="mt-auto inline-block w-fit rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">Google Sheets</span>
+                                </div>
+                            </article>
                         </div>
                         <div class="mt-4 flex items-center justify-center gap-5">
                             <button type="button" data-carousel-prev class="rounded-full border border-slate-200 bg-white p-2 text-slate-700 shadow-sm transition-colors hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40" aria-label="Foto sebelumnya" disabled>
@@ -168,43 +162,41 @@
                 </section>
 
                 <section aria-labelledby="video-portfolio-heading">
-                    <h3 id="video-portfolio-heading" class="mb-4 text-lg font-bold text-slate-900">Galeri Video</h3>
+                    <h3 id="video-portfolio-heading" class="mb-3 text-lg font-bold text-slate-900">Galeri Video</h3>
                     <div data-carousel>
-                        <div data-carousel-track class="flex snap-x snap-mandatory overflow-x-auto scroll-smooth" tabindex="0" aria-label="Galeri video pekerjaan">
-                <!-- KARTU 2: VIDEO EDITING (FILE MP4 LOKAL) -->
-                <article class="w-full shrink-0 snap-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                    <video controls autoplay loop muted playsinline class="aspect-video w-full bg-black object-cover">
-                        <source src="capcut1.mp4" type="video/mp4">
-                        Maaf, browser Anda tidak mendukung pemutar video ini.
-                    </video>
-                    
-                    <div class="flex flex-1 flex-col p-5">
-                        <h3 class="mb-2 font-bold text-slate-900">Edit Video CapCut</h3>
-                        <p class="mb-5 text-sm leading-relaxed text-slate-500">Hasil editing video menggunakan aplikasi CapCut.</p>
-                        <div class="mt-auto flex items-center justify-between gap-3">
-                            <span class="inline-block rounded-full bg-brand-light px-3 py-1 text-xs font-medium text-brand">CapCut</span>
-                            <button type="button" class="rounded-full border border-brand/20 px-3 py-1.5 text-sm font-medium text-brand transition-colors hover:bg-brand-light" data-open-media data-media-type="video" data-media-src="capcut1.mp4" data-media-alt="Edit Video CapCut">
-                                Perbesar video
-                            </button>
-                        </div>
-                    </div>
-                </article>
-                <article class="w-full shrink-0 snap-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                    <video controls autoplay loop muted playsinline class="aspect-video w-full bg-black object-cover">
-                        <source src="capcut2.mp4" type="video/mp4">
-                        Maaf, browser Anda tidak mendukung pemutar video ini.
-                    </video>
-                    <div class="flex flex-1 flex-col p-5">
-                        <h3 class="mb-2 font-bold text-slate-900">Edit Video CapCut 2</h3>
-                        <p class="mb-5 text-sm leading-relaxed text-slate-500">Contoh hasil editing video menggunakan aplikasi CapCut.</p>
-                        <div class="mt-auto flex items-center justify-between gap-3">
-                            <span class="inline-block rounded-full bg-brand-light px-3 py-1 text-xs font-medium text-brand">CapCut</span>
-                            <button type="button" class="rounded-full border border-brand/20 px-3 py-1.5 text-sm font-medium text-brand transition-colors hover:bg-brand-light" data-open-media data-media-type="video" data-media-src="capcut2.mp4" data-media-alt="Edit Video CapCut 2">
-                                Perbesar video
-                            </button>
-                        </div>
-                    </div>
-                </article>
+                        <div data-carousel-track class="flex items-stretch snap-x snap-mandatory overflow-x-auto scroll-smooth" tabindex="0" aria-label="Galeri video pekerjaan">
+                            <article class="flex w-full shrink-0 snap-center flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md">
+                                <video controls autoplay loop muted playsinline class="aspect-video w-full bg-black object-cover">
+                                    <source src="capcut1.mp4" type="video/mp4">
+                                    Maaf, browser Anda tidak mendukung pemutar video ini.
+                                </video>
+                                <div class="flex flex-1 flex-col p-5">
+                                    <h4 class="mb-2 text-lg font-bold text-slate-900">Edit Video CapCut</h4>
+                                    <p class="mb-5 flex-1 text-sm leading-relaxed text-slate-500">Hasil editing video menggunakan aplikasi CapCut.</p>
+                                    <div class="mt-auto flex items-center justify-between gap-3">
+                                        <span class="inline-block rounded-full bg-brand-light px-3 py-1 text-xs font-medium text-brand">CapCut</span>
+                                        <button type="button" class="rounded-full border border-brand/20 px-3 py-1.5 text-sm font-medium text-brand transition-colors hover:bg-brand-light" data-open-media data-media-type="video" data-media-src="capcut1.mp4" data-media-alt="Edit Video CapCut">
+                                            Perbesar video
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="flex w-full shrink-0 snap-center flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md">
+                                <video controls autoplay loop muted playsinline class="aspect-video w-full bg-black object-cover">
+                                    <source src="capcut2.mp4" type="video/mp4">
+                                    Maaf, browser Anda tidak mendukung pemutar video ini.
+                                </video>
+                                <div class="flex flex-1 flex-col p-5">
+                                    <h4 class="mb-2 text-lg font-bold text-slate-900">Edit Video CapCut 2</h4>
+                                    <p class="mb-5 flex-1 text-sm leading-relaxed text-slate-500">Contoh hasil editing video menggunakan aplikasi CapCut.</p>
+                                    <div class="mt-auto flex items-center justify-between gap-3">
+                                        <span class="inline-block rounded-full bg-brand-light px-3 py-1 text-xs font-medium text-brand">CapCut</span>
+                                        <button type="button" class="rounded-full border border-brand/20 px-3 py-1.5 text-sm font-medium text-brand transition-colors hover:bg-brand-light" data-open-media data-media-type="video" data-media-src="capcut2.mp4" data-media-alt="Edit Video CapCut 2">
+                                            Perbesar video
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
                         <div class="mt-4 flex items-center justify-center gap-5">
                     <button type="button" data-carousel-prev class="rounded-full border border-slate-200 bg-white p-2 text-slate-700 shadow-sm transition-colors hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40" aria-label="Video sebelumnya" disabled>
